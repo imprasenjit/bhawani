@@ -1,0 +1,31 @@
+# CI4 runtime
+/writable/logs/*
+/writable/cache/*
+/writable/session/*
+/writable/uploads/*
+!writable/**/.gitkeep
+
+# Environment config — contains secrets
+.env
+
+# React / Node
+/frontend/node_modules/
+/frontend/dist/
+
+# Built React assets served by CI4
+/public/dist/
+
+# Composer
+/vendor/
+
+# PHPUnit build artifacts
+/build/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
