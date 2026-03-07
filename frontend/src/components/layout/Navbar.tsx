@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import bmplLogo from '../../assets/bmpl_logo_new.png'
+import bmplLogo from '../../assets/logo.png'
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
@@ -213,9 +213,9 @@ function SimpleDropdown({ groups, onClose }: { groups: SubGroup[]; onClose: () =
 
 // ─── Mega menu ───────────────────────────────────────────────────────────────
 
-function MegaMenu({ sections, onClose }: { sections: MegaSection[]; onClose: () => void }) {
+function MegaMenu({ sections, onClose, scrolled }: { sections: MegaSection[]; onClose: () => void; scrolled: boolean }) {
   return (
-    <div className="fixed left-0 right-0 mt-1 bg-white border-t border-gray-100 shadow-2xl z-50" style={{ top: '64px' }}>
+    <div className="fixed left-0 right-0 mt-1 bg-white border-t border-gray-100 shadow-2xl z-50" style={{ top: scrolled ? '56px' : '80px' }}>
       <div className="max-w-[1920px] mx-auto px-6 py-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {sections.map((section) => (
@@ -244,7 +244,7 @@ function MegaMenu({ sections, onClose }: { sections: MegaSection[]; onClose: () 
 
 // ─── Desktop nav item ────────────────────────────────────────────────────────
 
-function DesktopNavItem({ item }: { item: NavItem }) {
+function DesktopNavItem({ item, scrolled }: { item: NavItem; scrolled: boolean }) {
   const [open, setOpen] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
@@ -260,7 +260,7 @@ function DesktopNavItem({ item }: { item: NavItem }) {
 
   if (!hasMenu) {
     return (
-      <NavLink href={item.href ?? '/'} className="px-3 py-2 text-sm font-medium text-gray-600 hover:text-indigo-600 hover:bg-indigo-50 rounded-md transition-colors whitespace-nowrap">
+      <NavLink href={item.href ?? '/'} className="px-3 py-2 text-sm font-medium text-gray-700 hover:text-indigo-600 transition-colors whitespace-nowrap">
         {item.label}
       </NavLink>
     )
@@ -268,15 +268,18 @@ function DesktopNavItem({ item }: { item: NavItem }) {
 
   return (
     <div ref={ref} className="relative">
-      <button
+      <div
+        role="button"
+        tabIndex={0}
         onClick={() => setOpen(!open)}
-        className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-md transition-colors whitespace-nowrap ${open ? 'text-indigo-600 bg-indigo-50' : 'text-gray-600 hover:text-indigo-600 hover:bg-indigo-50'}`}
+        onKeyDown={(e) => e.key === 'Enter' && setOpen(!open)}
+        className={`flex items-center gap-1 px-3 py-2 text-sm font-medium transition-colors whitespace-nowrap cursor-pointer select-none ${open ? 'text-indigo-600' : 'text-gray-700 hover:text-indigo-600'}`}
       >
         {item.label}
         <ChevronDown className={open ? 'rotate-180' : ''} />
-      </button>
+      </div>
       {open && item.dropdown && <SimpleDropdown groups={item.dropdown} onClose={() => setOpen(false)} />}
-      {open && item.mega && <MegaMenu sections={item.mega} onClose={() => setOpen(false)} />}
+      {open && item.mega && <MegaMenu sections={item.mega} onClose={() => setOpen(false)} scrolled={scrolled} />}
     </div>
   )
 }
@@ -294,7 +297,7 @@ function MobileAccordion({ item, onClose }: { item: NavItem; onClose: () => void
 
   if (!allItems.length) {
     return (
-      <NavLink href={item.href ?? '/'} onClick={onClose} className="block px-3 py-2.5 text-sm font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50 rounded-md">
+      <NavLink href={item.href ?? '/'} onClick={onClose} className="block px-3 py-2.5 text-sm font-medium text-gray-700 hover:text-indigo-600">
         {item.label}
       </NavLink>
     )
@@ -308,13 +311,16 @@ function MobileAccordion({ item, onClose }: { item: NavItem; onClose: () => void
 
   return (
     <div>
-      <button
+      <div
+        role="button"
+        tabIndex={0}
         onClick={() => setOpen(!open)}
-        className={`w-full flex items-center justify-between px-3 py-2.5 text-sm font-medium rounded-md transition-colors ${open ? 'text-indigo-600 bg-indigo-50' : 'text-gray-700'}`}
+        onKeyDown={(e) => e.key === 'Enter' && setOpen(!open)}
+        className={`w-full flex items-center justify-between px-3 py-2.5 text-sm font-medium transition-colors cursor-pointer select-none ${open ? 'text-indigo-600' : 'text-gray-700 hover:text-indigo-600'}`}
       >
         {item.label}
         <ChevronDown className={open ? 'rotate-180' : ''} />
-      </button>
+      </div>
       {open && (
         <div className="ml-3 mt-1 border-l-2 border-indigo-100 pl-3 space-y-3 pb-2">
           {groups.map((group) => (
@@ -337,29 +343,33 @@ function MobileAccordion({ item, onClose }: { item: NavItem; onClose: () => void
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40)
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/98 backdrop-blur-sm shadow-sm">
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      scrolled
+        ? 'bg-white/90 backdrop-blur-md shadow-md'
+        : 'bg-white/60 backdrop-blur-sm shadow-none'
+    }`}>
       <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
-        <div className="flex items-center justify-between h-16">
+        <div className={`flex items-center justify-between transition-all duration-300 ${scrolled ? 'h-14' : 'h-20'}`}>
 
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 shrink-0">
-            <img src={bmplLogo} alt="BMPL" className="h-10 w-auto object-contain" />
+            <img src={bmplLogo} alt="BMPL" className={`w-auto object-contain transition-all duration-300 ${scrolled ? 'h-9' : 'h-13'}`} />
           </Link>
 
           {/* Desktop nav */}
           <div className="hidden lg:flex items-center gap-0.5">
             {navItems.map((item) => (
-              <DesktopNavItem key={item.label} item={item} />
+              <DesktopNavItem key={item.label} item={item} scrolled={scrolled} />
             ))}
-          </div>
-
-          {/* CTA */}
-          <div className="hidden lg:flex items-center">
-            <NavLink href="/join-us" className="text-sm font-semibold text-white bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-full transition-colors shadow-sm whitespace-nowrap">
-              Join Us
-            </NavLink>
           </div>
 
           {/* Mobile hamburger */}
@@ -383,7 +393,7 @@ export default function Navbar() {
             {navItems.map((item) => (
               <MobileAccordion key={item.label} item={item} onClose={() => setMobileOpen(false)} />
             ))}
-            <a href="#careers" onClick={() => setMobileOpen(false)} className="block mt-3 text-center text-sm font-semibold text-white bg-indigo-600 px-4 py-2.5 rounded-full">
+            <a href="#careers" onClick={() => setMobileOpen(false)} className="block mt-1 px-3 py-2.5 text-sm font-medium text-gray-700 hover:text-indigo-600">
               Join Us
             </a>
           </div>
