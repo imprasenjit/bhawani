@@ -13,7 +13,7 @@
 /frontend/dist/
 
 # Built React assets served by CI4
-/public/dist/
+# /public/dist/  ← intentionally tracked so built assets are deployed with git
 
 # Composer
 /vendor/
