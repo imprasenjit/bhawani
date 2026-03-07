@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
 
   // Absolute base matching the public/dist/ serve path so asset URLs resolve correctly
-  base: '/bhawani/public/dist/',
+  base: '/public/dist/',
   build: {
     outDir: '../public/dist',
     emptyOutDir: true,
