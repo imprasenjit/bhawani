@@ -1,4 +1,4 @@
-const BASE = '/bhawani/public/images/'
+const BASE = '/public/images/'
 
 const programs = [
   {

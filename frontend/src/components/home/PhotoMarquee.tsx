@@ -1,4 +1,4 @@
-const BASE = '/bhawani/public/images/'
+const BASE = '/public/images/'
 
 const row1 = [
   'DSC_2001', 'DSC_2031', 'DSC_2042', 'DSC_2099', 'DSC_2118',

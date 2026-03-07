@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 
-const BASE = '/bhawani/public/images/'
+const BASE = '/public/images/'
 
 const slides = [
   {

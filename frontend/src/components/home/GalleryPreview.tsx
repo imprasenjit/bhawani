@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const BASE = '/bhawani/public/images/'
+const BASE = '/public/images/'
 
 type GalleryCategory = 'All' | 'Skill & Livelihood' | 'Events' | 'Construction' | 'ITeS' | 'Manpower'
 

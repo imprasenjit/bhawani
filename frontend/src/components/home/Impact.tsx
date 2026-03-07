@@ -14,7 +14,7 @@ const outcomes = [
 export default function Impact() {
   return (
     <section id="impact" className="py-24 bg-gradient-to-br from-indigo-950 to-slate-900 text-white relative overflow-hidden">
-      <img src="/bhawani/public/images/DSC_1915.JPG" alt="" aria-hidden="true"
+      <img src="/public/images/DSC_1915.JPG" alt="" aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover opacity-[0.08] mix-blend-luminosity" />
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-indigo-500/10 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl" />

@@ -20,7 +20,7 @@ export default defineConfig({
         target: 'http://localhost',
         changeOrigin: true,
       },
-      '/bhawani/public/images': {
+      '/public/images': {
         target: 'http://localhost',
         changeOrigin: true,
       },
