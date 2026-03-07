@@ -17,7 +17,7 @@ const doubled = [...affiliations, ...affiliations]
 export default function AffiliationSlider() {
   return (
     <section id="affiliations" className="py-20 bg-gradient-to-br from-indigo-950 to-slate-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 mb-12 text-center">
         <span className="text-sm font-semibold text-indigo-300 uppercase tracking-widest">Affiliations & Empanelments</span>
         <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-white">
           Our Affiliations & Accreditations

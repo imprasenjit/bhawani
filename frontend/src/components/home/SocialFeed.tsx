@@ -55,7 +55,7 @@ const igPosts = [
 export default function SocialFeed() {
   return (
     <section id="social-feed" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
         <div className="text-center mb-12">
           <span className="inline-block bg-indigo-100 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-3">Follow Us</span>
           <h2 className="text-4xl font-extrabold text-gray-900">Stay Connected</h2>

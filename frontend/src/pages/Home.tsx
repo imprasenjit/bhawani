@@ -4,6 +4,7 @@ import WhyChoose        from '../components/home/WhyChoose'
 import Programs         from '../components/home/Programs'
 import AffiliationSlider from '../components/home/AffiliationSlider'
 import Impact           from '../components/home/Impact'
+import PhotoMarquee     from '../components/home/PhotoMarquee'
 import NewsUpdates      from '../components/home/NewsUpdates'
 import GalleryPreview   from '../components/home/GalleryPreview'
 import Testimonials     from '../components/home/Testimonials'
@@ -29,6 +30,7 @@ export default function Home() {
 
       {/* ── Proof & metrics ────────────────────────────────────── */}
       <Impact />
+      <PhotoMarquee />
       <Testimonials />
 
       {/* ── Content & media ────────────────────────────────────── */}

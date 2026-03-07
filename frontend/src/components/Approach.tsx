@@ -40,7 +40,7 @@ const pillars = [
 export default function Approach() {
   return (
     <section id="approach" className="py-24 bg-slate-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
         <div className="text-center mb-16">
           <span className="text-sm font-semibold text-indigo-600 uppercase tracking-widest">The Sikk Way</span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">

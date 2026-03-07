@@ -5,7 +5,7 @@ export default function QuickQuery() {
 
   return (
     <section id="query" className="py-24 bg-gradient-to-br from-indigo-600 to-blue-700">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
         <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
           <div className="grid lg:grid-cols-5">
             {/* Left info panel */}

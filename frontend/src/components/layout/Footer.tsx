@@ -25,7 +25,7 @@ export default function Footer() {
   return (
     <footer id="contact" className="bg-slate-900 text-white">
       {/* Main footer grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 py-16">
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10">
 
           {/* Brand + About */}
@@ -123,7 +123,7 @@ export default function Footer() {
 
       {/* Bottom bar */}
       <div className="border-t border-white/10 py-5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+        <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
           <span>© {new Date().getFullYear()} Bhawani Marketing Private Limited (BMPL). All rights reserved.</span>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>

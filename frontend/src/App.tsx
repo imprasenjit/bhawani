@@ -20,7 +20,7 @@ import Manpower     from './pages/approach/Manpower'
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="font-sans text-gray-900 antialiased">
+      <div className="font-sans text-gray-900 antialiased text-[1rem]">
         <Navbar />
         <main>
           <Routes>

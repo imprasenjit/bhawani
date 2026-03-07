@@ -31,8 +31,10 @@ const stories = [
 
 export default function Testimonials() {
   return (
-    <section id="stories" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="stories" className="py-24 bg-slate-50 relative overflow-hidden">
+      <img src="/bhawani/public/images/DSC_1844.JPG" alt="" aria-hidden="true"
+        className="absolute inset-0 w-full h-full object-cover opacity-[0.06]" />
+      <div className="relative max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
         <div className="text-center mb-16">
           <span className="text-sm font-semibold text-indigo-600 uppercase tracking-widest">What They Say</span>
           <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">

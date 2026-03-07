@@ -32,7 +32,7 @@ export default function Manpower() {
 
       {/* ── Overview ─────────────────────────────────────────────────── */}
       <section id="manpower" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-rose-600">About Manpower &amp; Staffing</span>
             <h2 className="text-3xl font-extrabold text-gray-900 mt-2 mb-5">Your Trusted Workforce Partner</h2>
@@ -63,7 +63,7 @@ export default function Manpower() {
 
       {/* ── Clients ──────────────────────────────────────────────────── */}
       <section id="manpower-work" className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-10">
             <span className="text-xs font-bold uppercase tracking-widest text-rose-600">Clients</span>
             <h2 className="text-3xl font-extrabold text-gray-900 mt-2">List of Clients</h2>
@@ -81,7 +81,7 @@ export default function Manpower() {
 
       {/* ── Past Works Placeholder ───────────────────────────────────── */}
       <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 text-center">
           <h2 className="text-2xl font-extrabold text-gray-900 mb-4">Past Works – Gallery</h2>
           <div className="bg-gray-50 rounded-2xl border border-dashed border-gray-300 p-12">
             <div className="text-5xl mb-4">🖼️</div>

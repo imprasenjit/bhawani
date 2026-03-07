@@ -11,7 +11,7 @@ export default function Media() {
         </div>
       </section>
       <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 grid md:grid-cols-2 gap-8">
           {[
             { icon: '📸', title: 'Events & Photos', desc: 'Event photographs and coverage will be available here.' },
             { icon: '🎬', title: 'Video Productions', desc: 'Promotional and documentary videos will be available here.' },

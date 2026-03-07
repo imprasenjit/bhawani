@@ -1,85 +1,95 @@
+const BASE = '/bhawani/public/images/'
+
 const programs = [
   {
-    icon: '🎓',
+    photo: BASE + 'DSC_1993.JPG',
+    accent: '#6366f1',
     title: 'Skills & Livelihood Training',
     description: 'Vocational education, CSR-linked skill development, and livelihood training for underprivileged youth. Affiliated with CSDCI, ESSCI, THSSC and TSSCI.',
-    duration: 'Govt. Funded',
     badge: 'NSDC / Skill India',
-    badgeColor: 'bg-indigo-100 text-indigo-700',
+    href: '/approach/skills',
   },
   {
-    icon: '🎪',
+    photo: BASE + 'DSC_1844.JPG',
+    accent: '#f59e0b',
     title: 'Events & Promotions',
     description: 'End-to-end event management for Government, corporate and public events. Outdoor advertising, media production, design & print, and IEC activities across North East.',
-    duration: 'Full-Service',
     badge: 'Govt. Empanelled',
-    badgeColor: 'bg-amber-100 text-amber-700',
+    href: '/approach/events',
   },
   {
-    icon: '🏗️',
+    photo: BASE + 'DSC_2301.JPG',
+    accent: '#10b981',
     title: 'Construction Services',
     description: 'Civil works, commercial construction, renovation and designs with over 25 years of experience. Registered as Class 1(A) contractor under PWD (Building), Assam.',
-    duration: '25+ Years',
     badge: 'PWD Class 1(A)',
-    badgeColor: 'bg-emerald-100 text-emerald-700',
+    href: '/approach/construction',
   },
   {
-    icon: '💻',
+    photo: BASE + 'DSC_2604.JPG',
+    accent: '#3b82f6',
     title: 'ITeS & Allied Services',
     description: 'Digital product engineering, IT-enabled services and digital transformation solutions. Partnered with Government departments and enterprises across Assam.',
-    duration: 'End-to-End',
     badge: 'Digital Ready',
-    badgeColor: 'bg-blue-100 text-blue-700',
+    href: '/approach/ites',
   },
   {
-    icon: '👥',
+    photo: BASE + 'DSC_1861.JPG',
+    accent: '#f43f5e',
     title: 'Manpower & Staffing',
     description: "Volume and quality manpower for Government departments, private organisations and industries. One of Assam's leading staffing agencies serving since 1998.",
-    duration: 'Multi-location',
     badge: 'Trusted Agency',
-    badgeColor: 'bg-rose-100 text-rose-700',
+    href: '/approach/manpower',
   },
 ]
 
 export default function Programs() {
   return (
-    <section id="programs" className="py-24 bg-slate-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
+    <section id="programs" className="py-24 bg-slate-950">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
         <div className="text-center mb-16">
-          <span className="text-sm font-semibold text-indigo-600 uppercase tracking-widest">What We Do</span>
-          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-gray-900">
+          <span className="text-sm font-semibold text-indigo-400 uppercase tracking-widest">What We Do</span>
+          <h2 className="mt-2 text-3xl sm:text-4xl font-extrabold text-white">
             Five Market-Leading{' '}
-            <span className="text-indigo-600">Business Segments</span>
+            <span className="text-indigo-400">Business Segments</span>
           </h2>
-          <p className="mt-4 text-gray-500 max-w-xl mx-auto text-base">
+          <p className="mt-4 text-slate-400 max-w-xl mx-auto text-base">
             BMPL operates across five differentiated sectors — each serving end-markets
             with strong fundamentals and positive long-term prospects across North & North East India.
           </p>
         </div>
 
-        {/* Cards */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {programs.map((p) => (
-            <div key={p.title} className="group bg-white rounded-2xl border border-gray-100 p-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300">
-              <div className="flex items-start justify-between mb-4">
-                <div className="text-4xl">{p.icon}</div>
-                {p.badge && (
-                  <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${p.badgeColor}`}>
-                    {p.badge}
-                  </span>
-                )}
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2 group-hover:text-indigo-600 transition-colors">{p.title}</h3>
-              <p className="text-sm text-gray-500 leading-relaxed mb-5">{p.description}</p>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-1.5 text-xs font-medium text-gray-500">
-                  <svg className="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                  {p.duration}
-                </div>
-                <a href="/approach/skills" className="text-sm font-semibold text-indigo-600 hover:text-indigo-800 flex items-center gap-1">
+            <div key={p.title} className="group relative h-80 rounded-2xl overflow-hidden">
+              <img
+                src={p.photo}
+                alt={p.title}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-black/10 group-hover:from-black/95 transition-colors duration-500" />
+              <div className="absolute top-0 left-0 right-0 h-1" style={{ backgroundColor: p.accent }} />
+              <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                <span
+                  className="text-[11px] font-bold uppercase tracking-widest mb-2 px-2.5 py-0.5 rounded-full self-start"
+                  style={{ backgroundColor: p.accent + '33', color: p.accent }}
+                >
+                  {p.badge}
+                </span>
+                <h3 className="text-lg font-extrabold text-white mb-2 leading-snug">{p.title}</h3>
+                <p className="text-sm text-white/65 leading-relaxed mb-4 line-clamp-3 group-hover:text-white/80 transition-colors">
+                  {p.description}
+                </p>
+                <a
+                  href={p.href}
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold transition-all"
+                  style={{ color: p.accent }}
+                >
                   Learn More
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                  <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
                 </a>
               </div>
             </div>
@@ -87,7 +97,7 @@ export default function Programs() {
         </div>
 
         <div className="text-center mt-10">
-          <a href="/about" className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-full transition-colors shadow-md hover:shadow-indigo-200">
+          <a href="/about" className="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-full transition-colors shadow-md">
             About BMPL
           </a>
         </div>

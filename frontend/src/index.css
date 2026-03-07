@@ -5,11 +5,14 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Fluid base font: 16px @ 360px → 20px @ 1920px */
+  font-size: clamp(1rem, 0.9rem + 0.45vw, 1.25rem);
 }
 
 body {
   margin: 0;
   min-width: 320px;
+  font-size: inherit;
 }
 
 /* ── Infinite marquee (Partners / Affiliations) ── */

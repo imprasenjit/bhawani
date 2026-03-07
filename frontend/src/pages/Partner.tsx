@@ -49,7 +49,7 @@ export default function Partner() {
 
       {/* ── Collaboration Types ───────────────────────────────────────── */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-teal-600">Opportunities</span>
@@ -86,7 +86,7 @@ export default function Partner() {
 
       {/* ── Opportunities We Provide ─────────────────────────────────── */}
       <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-8">
             <h2 className="text-2xl font-extrabold text-gray-900">Opportunities We Provide</h2>
           </div>
@@ -98,7 +98,7 @@ export default function Partner() {
 
       {/* ── Required Qualities ───────────────────────────────────────── */}
       <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-10">
             <span className="text-xs font-bold uppercase tracking-widest text-teal-600">Requirements</span>
             <h2 className="text-2xl font-extrabold text-gray-900 mt-2">Required Qualities to Become a Partner</h2>
@@ -117,7 +117,7 @@ export default function Partner() {
 
       {/* ── Guidance to Start ────────────────────────────────────────── */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-12">
             <h2 className="text-2xl font-extrabold text-gray-900">Guidance to Start the Centre</h2>
           </div>

@@ -93,7 +93,7 @@ export default function HeroSlider() {
         style={{ backgroundColor: slide.accent }} />
 
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
+      <div className="relative max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 py-32 w-full">
         <div key={animKey} className="slide-enter max-w-3xl">
           <div className="inline-flex items-center gap-2 border border-white/20 text-white/80 text-xs font-semibold px-4 py-2 rounded-full mb-6 bg-white/5 backdrop-blur-sm">
             {slide.badge}

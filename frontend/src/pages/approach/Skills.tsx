@@ -50,7 +50,7 @@ export default function Skills() {
 
       {/* ── Overview ─────────────────────────────────────────────────── */}
       <section id="skill-training" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-indigo-600">What We Do</span>
             <h2 className="text-3xl font-extrabold text-gray-900 mt-2 mb-5">BMPL Skills Overview</h2>
@@ -75,7 +75,7 @@ export default function Skills() {
 
       {/* ── CSR ───────────────────────────────────────────────────────── */}
       <section id="csr" className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-emerald-600">Corporate Social Responsibility</span>
@@ -104,7 +104,7 @@ export default function Skills() {
 
       {/* ── Livelihood ───────────────────────────────────────────────── */}
       <section id="livelihood" className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-10">
             <span className="text-xs font-bold uppercase tracking-widest text-amber-600">Livelihood</span>
             <h2 className="text-3xl font-extrabold text-gray-900 mt-2">Livelihood Training</h2>
@@ -120,7 +120,7 @@ export default function Skills() {
 
       {/* ── Approach & Methodology ───────────────────────────────────── */}
       <section id="methodology" className="py-20 bg-gradient-to-br from-indigo-600 to-blue-700 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 text-center">
           <h2 className="text-3xl font-extrabold mb-5">Approach &amp; Methodology</h2>
           <p className="text-indigo-200 leading-relaxed mb-4">
             Skills training refers to an employer-provided program that teaches or develops proficiencies for the workplace. The aim of skills training is to equip employees with the knowledge and attributes necessary to carry out their duties at the optimal level.
@@ -133,7 +133,7 @@ export default function Skills() {
 
       {/* ── Course Details ───────────────────────────────────────────── */}
       <section id="courses" className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 text-center">
           <h2 className="text-2xl font-extrabold text-gray-900 mb-4">Course Details</h2>
           <div className="bg-gray-50 rounded-2xl border border-dashed border-gray-300 p-12">
             <div className="text-5xl mb-4">📚</div>
@@ -144,7 +144,7 @@ export default function Skills() {
 
       {/* ── Affiliations & Empanelment ───────────────────────────────── */}
       <section id="affiliation" className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 grid md:grid-cols-2 gap-10">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-indigo-600">Affiliations</span>
             <h2 className="text-2xl font-extrabold text-gray-900 mt-2 mb-5">Sector Skill Councils</h2>
@@ -183,7 +183,7 @@ export default function Skills() {
 
       {/* ── Placement Partners / Success Stories (placeholders) ───────── */}
       <section id="placement" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { icon: '🤝', color: 'indigo', title: 'Placement Partners', text: 'Details to be added' },

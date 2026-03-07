@@ -76,7 +76,7 @@ export default function Events() {
 
       {/* ── About ────────────────────────────────────────────────────── */}
       <section id="about-events" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 grid lg:grid-cols-2 gap-12 items-start">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-amber-600">About BMPL Events</span>
             <h2 className="text-3xl font-extrabold text-gray-900 mt-2 mb-5">Creating Experiences Beyond Expectations</h2>
@@ -110,7 +110,7 @@ export default function Events() {
 
       {/* ── Services ─────────────────────────────────────────────────── */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-gray-900">What We Do</h2>
             <p className="mt-3 text-gray-500 text-sm">Full-spectrum event and communication services.</p>
@@ -138,7 +138,7 @@ export default function Events() {
 
       {/* ── Why Choose Us ────────────────────────────────────────────── */}
       <section className="py-20 bg-gradient-to-br from-amber-500 to-orange-600 text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold">Why Choose Us?</h2>
           </div>
@@ -156,7 +156,7 @@ export default function Events() {
 
       {/* ── Empanelment & Clients ─────────────────────────────────────── */}
       <section id="events-empanelment" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 grid md:grid-cols-2 gap-10">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-amber-600">Government Empanelment</span>
             <h2 className="text-2xl font-extrabold text-gray-900 mt-2 mb-5">Empanelled Under</h2>
@@ -185,7 +185,7 @@ export default function Events() {
 
       {/* ── Brochure & Gallery ───────────────────────────────────────── */}
       <section id="brochure" className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 grid md:grid-cols-2 gap-8">
           <div className="bg-white rounded-2xl p-8 border border-dashed border-gray-300 text-center">
             <div className="text-5xl mb-4">📋</div>
             <h3 className="font-extrabold text-gray-800 mb-2">Corporate Brochure</h3>

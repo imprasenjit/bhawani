@@ -35,7 +35,7 @@ export default function About() {
 
       {/* ── Company Overview ─────────────────────────────────────────── */}
       <section id="overview" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-indigo-600">Founded 1998 · Guwahati</span>
             <h2 className="text-3xl font-extrabold text-gray-900 mt-2 mb-5">27 Years of Excellence</h2>
@@ -72,7 +72,7 @@ export default function About() {
 
       {/* ── Vision / Mission / Commitment ────────────────────────────── */}
       <section id="mission" className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-gray-900">Vision · Mission · Commitment</h2>
           </div>
@@ -104,7 +104,7 @@ export default function About() {
 
       {/* ── Values ───────────────────────────────────────────────────── */}
       <section className="py-20 bg-gradient-to-br from-indigo-600 to-blue-700 text-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold mb-3">Values &amp; Goals</h2>
             <p className="text-indigo-200 max-w-xl mx-auto text-sm">
@@ -125,7 +125,7 @@ export default function About() {
 
       {/* ── Five Segments ────────────────────────────────────────────── */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-extrabold text-gray-900">Five Market-Leading Segments</h2>
             <p className="mt-3 text-gray-500 max-w-2xl mx-auto text-sm">
@@ -150,7 +150,7 @@ export default function About() {
 
       {/* ── Director's Message ───────────────────────────────────────── */}
       <section id="leadership" className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-indigo-600">Our Leadership</span>
             <h2 className="text-3xl font-extrabold text-gray-900 mt-2">Director's Message</h2>
@@ -179,7 +179,7 @@ export default function About() {
 
       {/* ── Operations Pan India ─────────────────────────────────────── */}
       <section id="operations" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20 text-center">
           <span className="text-xs font-bold uppercase tracking-widest text-indigo-600">Reach</span>
           <h2 className="text-3xl font-extrabold text-gray-900 mt-2 mb-6">Operations – Pan India</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-10 text-sm leading-relaxed">
@@ -202,7 +202,7 @@ export default function About() {
 
       {/* ── Annual Report & Awards ───────────────────────────────────── */}
       <section id="awards" className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-10">
             <span className="text-xs font-bold uppercase tracking-widest text-indigo-600">Recognition</span>
             <h2 className="text-3xl font-extrabold text-gray-900 mt-2">Annual Report &amp; Awards</h2>

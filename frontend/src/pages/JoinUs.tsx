@@ -24,7 +24,7 @@ export default function JoinUs() {
 
       {/* ── Careers ──────────────────────────────────────────────────── */}
       <section id="careers" className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-indigo-600">Careers</span>
             <h2 className="text-3xl font-extrabold text-gray-900 mt-2">Open Positions</h2>
@@ -65,7 +65,7 @@ export default function JoinUs() {
 
       {/* ── Volunteer & Internships ───────────────────────────────────── */}
       <section id="volunteer" className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="grid md:grid-cols-2 gap-10">
             {/* Volunteer */}
             <div>

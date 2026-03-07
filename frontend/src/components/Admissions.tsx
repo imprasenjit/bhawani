@@ -1,7 +1,7 @@
 export default function Admissions() {
   return (
     <section id="admissions" className="py-24 bg-white">
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
         <div className="bg-gradient-to-br from-indigo-600 to-blue-700 rounded-3xl overflow-hidden shadow-xl">
           <div className="grid lg:grid-cols-2">
             {/* Left: info */}

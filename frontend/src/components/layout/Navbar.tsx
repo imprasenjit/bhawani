@@ -216,7 +216,7 @@ function SimpleDropdown({ groups, onClose }: { groups: SubGroup[]; onClose: () =
 function MegaMenu({ sections, onClose }: { sections: MegaSection[]; onClose: () => void }) {
   return (
     <div className="fixed left-0 right-0 mt-1 bg-white border-t border-gray-100 shadow-2xl z-50" style={{ top: '64px' }}>
-      <div className="max-w-7xl mx-auto px-6 py-8">
+      <div className="max-w-[1920px] mx-auto px-6 py-8">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {sections.map((section) => (
             <div key={section.heading}>
@@ -340,7 +340,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/98 backdrop-blur-sm shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
         <div className="flex items-center justify-between h-16">
 
           {/* Logo */}

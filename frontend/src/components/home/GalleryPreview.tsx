@@ -14,6 +14,9 @@ const images = [
   { cat: 'Skill & Livelihood' as GalleryCategory, label: 'Training Centre', src: BASE + 'DSC_1718.JPG', span: '' },
   { cat: 'Skill & Livelihood' as GalleryCategory, label: 'Training Hostel', src: BASE + 'DSC_1720.JPG', span: '' },
   { cat: 'Skill & Livelihood' as GalleryCategory, label: 'Residential Training', src: BASE + 'DSC_1961.JPG', span: '' },
+  { cat: 'Skill & Livelihood' as GalleryCategory, label: 'Youth Skill Training', src: BASE + 'DSC_3082.JPG', span: '' },
+  { cat: 'Events' as GalleryCategory, label: 'Community Event', src: BASE + 'DSC_3112.JPG', span: '' },
+  { cat: 'Skill & Livelihood' as GalleryCategory, label: 'Trainee Cohort', src: BASE + 'DSC_3121.JPG', span: 'col-span-2' },
 ]
 
 const categories: GalleryCategory[] = ['All', 'Skill & Livelihood', 'Events', 'Construction', 'ITeS', 'Manpower']
@@ -26,7 +29,7 @@ export default function GalleryPreview() {
 
   return (
     <section id="gallery" className="py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10">
           <div>

@@ -48,7 +48,7 @@ export default function Gallery() {
 
       {/* ── Photos ───────────────────────────────────────────────────── */}
       <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-gray-500">Photos</span>
             <h2 className="text-3xl font-extrabold text-gray-900 mt-2">Photo Gallery</h2>
@@ -77,7 +77,7 @@ export default function Gallery() {
 
       {/* ── Videos ───────────────────────────────────────────────────── */}
       <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
           <div className="text-center mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-gray-500">Video</span>
             <h2 className="text-3xl font-extrabold text-gray-900 mt-2">Video Gallery</h2>
