@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const BASE = '/public/images/'
+const BASE = import.meta.env.VITE_IMAGES_BASE
 
 type GalleryCategory = 'All' | 'Skill & Livelihood' | 'Events' | 'Construction' | 'ITeS' | 'Manpower'
 

@@ -1,4 +1,4 @@
-const BASE = '/public/images/'
+const BASE = import.meta.env.VITE_IMAGES_BASE
 
 const row1 = [
   'DSC_2001', 'DSC_2031', 'DSC_2042', 'DSC_2099', 'DSC_2118',

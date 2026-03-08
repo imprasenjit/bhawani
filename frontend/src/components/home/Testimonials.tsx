@@ -32,7 +32,7 @@ const stories = [
 export default function Testimonials() {
   return (
     <section id="stories" className="py-24 bg-slate-50 relative overflow-hidden">
-      <img src="/public/images/DSC_1844.JPG" alt="" aria-hidden="true"
+      <img src={`${import.meta.env.VITE_IMAGES_BASE}DSC_1844.JPG`} alt="" aria-hidden="true"
         className="absolute inset-0 w-full h-full object-cover opacity-[0.06]" />
       <div className="relative max-w-[1920px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-20">
         <div className="text-center mb-16">

@@ -3,11 +3,11 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
   plugins: [react(), tailwindcss()],
 
-  // Absolute base matching the public/dist/ serve path so asset URLs resolve correctly
-  base: '/public/dist/',
+  // base differs: local XAMPP lives under /bhawani/public/, production at /public/
+  base: mode === 'production' ? '/public/dist/' : '/bhawani/public/dist/',
   build: {
     outDir: '../public/dist',
     emptyOutDir: true,
@@ -20,10 +20,10 @@ export default defineConfig({
         target: 'http://localhost',
         changeOrigin: true,
       },
-      '/public/images': {
+      '/bhawani/public/images': {
         target: 'http://localhost',
         changeOrigin: true,
       },
     },
   },
-})
+}))

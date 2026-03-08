@@ -93,7 +93,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-slate-400 mb-5">
               <li className="flex items-start gap-2">
                 <svg className="w-4 h-4 mt-0.5 shrink-0 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                <span>BMPL Centre, Sector 14, Gurugram, Haryana 122001</span>
+                <span>3rd Floor, Shima Plaza, G.S. Road, Ulubari Chariali, Guwahati, Kamrup, Assam - 781007</span>
               </li>
               <li className="flex items-center gap-2">
                 <svg className="w-4 h-4 shrink-0 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
@@ -108,7 +108,7 @@ export default function Footer() {
             <div className="rounded-xl overflow-hidden border border-white/10">
               <iframe
                 title="BMPL Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3508.2758862!2d77.03063!3d28.46283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1808a0!2sGurugram%2C+Haryana!5e0!3m2!1sen!2sin!4v1700000000000"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.0!2d91.7362!3d26.1735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a5912a53ddf49%3A0x4deb2e3c7e7c7e7c!2sShima%20Plaza%2C%20G.S.%20Road%2C%20Ulubari%2C%20Guwahati%2C%20Assam%20781007!5e0!3m2!1sen!2sin!4v1700000000000"
                 width="100%"
                 height="130"
                 style={{ border: 0, display: 'block' }}

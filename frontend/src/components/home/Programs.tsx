@@ -1,4 +1,4 @@
-const BASE = '/public/images/'
+const BASE = import.meta.env.VITE_IMAGES_BASE
 
 const programs = [
   {
